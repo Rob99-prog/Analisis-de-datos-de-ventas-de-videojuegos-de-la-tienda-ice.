@@ -3,7 +3,55 @@
 Indicaciónes resumidas: Análisis de datos de ventas de videojuegos de la tienda Ice (hasta 2016) con reseñas, géneros, plataformas y rating ESRB para detectar patrones de éxito y planear la campaña 2017. Limpiarás y preparación del dataset, evaluarás plataformas y géneros por región, correlaciones con reseñas, y probarás hipótesis. Entrega en Jupyter.
 
 
-Conclusión general
+
+Metodos de data: 
+#PASO 1: Cargar y explorar el dataset
+Cargamos games.csv, inspeccionamos sus columnas, tipos de datos y detectamos valores faltantes.
+
+
+#Paso 2: Prepara los datos
+#2.1 Renombrar columnas
+games.columns = games.columns.str.lower().str.replace(' ', '_')
+print(games.columns.tolist())
+['name', 'platform', 'year_of_release', 'genre', 'na_sales', 'eu_sales', 'jp_sales', 'other_sales', 'critic_score', 'user_score', 'rating']
+
+Comentario del revisor (1ra Iteracion)
+Bien hecho! Cambiar los nombres para que sean más accesibles ayuda con la agilidad al momento de hacer algún tratamiento de tus datos.
+
+#2.2 Convertir tipos de datos
+# 2.3 Conteo de valores ausentes
+# 2.4 Calcular ventas totales
+#Eliminar los nulos de name y year_of_release:
+
+
+
+#Paso 3: (Análisis Exploratorio de Datos)
+#Contar lanzamientos por año
+# Convertir a lista de tuplas (año, cantidad)
+#3.1: Definir el rango de años
+#3.2: Agrupar y sumar ventas
+# Filtrar por rango:
+# Ventas totales por plataforma:
+#3.3: Visualizar con gráfico de barras
+#3.4: Diagrama de caja de las ventas globales
+#3.5: Correlación entre reseñas y ventas
+# Gráfico de dispersión: Critic_Score vs total_sales
+
+
+#Paso 4: Perfil de usuario por región
+#4.2: Top 5 géneros por región
+#4.3: Efecto de la clasificación ESRB
+
+
+#Paso 5: Prueba de hipótesis sobre puntuaciones de usuarios
+#5.1: Hipótesis entre plataformas (Xbox One vs PC)
+#Extraer puntuaciones de usuarios
+#Test de Welch
+#5.2: (Action vs Sports)
+# Extraer puntuaciones por género
+# Test de Welch
+
+
 
 Objetivo del proyecto:
 Analizar patrones de éxito de videojuegos usando datos hasta diciembre de 2016 para planificar campañas de marketing en 2017.
