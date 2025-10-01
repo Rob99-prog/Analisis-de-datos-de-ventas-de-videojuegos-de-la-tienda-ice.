@@ -1,23 +1,28 @@
-# Analisis-de-datos-de-ventas-de-videojuegos-de-la-tienda-ice.
-Análisis de datos de ventas de videojuegos de la tienda Ice (hasta 2016) con reseñas, géneros, plataformas y rating ESRB para detectar patrones de éxito y planear la campaña 2017. Limpiarás y preparación del dataset, evaluarás plataformas y géneros por región, correlaciones con reseñas, y probarás hipótesis. Entrega en Jupyter.
+# Analisis de datos de ventas de videojuegos de la tienda ice.
+
+Indicaciónes resumidas: Análisis de datos de ventas de videojuegos de la tienda Ice (hasta 2016) con reseñas, géneros, plataformas y rating ESRB para detectar patrones de éxito y planear la campaña 2017. Limpiarás y preparación del dataset, evaluarás plataformas y géneros por región, correlaciones con reseñas, y probarás hipótesis. Entrega en Jupyter.
+
 
 Conclusión general
-Objetivo del proyecto
+
+Objetivo del proyecto:
 Analizar patrones de éxito de videojuegos usando datos hasta diciembre de 2016 para planificar campañas de marketing en 2017.
 
 0.2. Principales hallazgos
 Tendencia de lanzamientos
 
 Tres fases: crecimiento inicial (1980–1994), pico de publicaciones (1995–2009) y estabilización/descenso (2010–2016).
+
 Plataformas líderes
 NA: X360, PS2 y Wii.
 EU: PS2, PS3 y X360.
 JP: DS, PS y PS2.
 
-Géneros más rentables
-Por mediana de ventas globales: Platform, Shooter y Sports.
+Géneros más rentables por mediana de ventas globales:
+Platform, Shooter y Sports.
 Action y Role‑Playing lideran en número de títulos, pero sus medianas de venta son menores.
-Correlación crítica‑ventas
+
+Correlación crítica‑ventas:
 En PS3, la puntuación de críticos muestra una correlación moderada (r≈0.43) con las ventas globales.
 Pruebas de hipótesis
 Xbox One vs PC (user_score): t = −4.671, p < 0.001 ⇒ medias significativamente diferentes.
